@@ -1,1 +1,20 @@
-{{4+4}} - From home
+<table class="table table-hover table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Milestone</th>
+            <th scope="col">Development Status</th>
+            <th scope="col">Milestone Value</th>
+            <th scope="col">Payment Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="milestone in milestones">
+            <td>{{milestone.milestone}}</td>
+            <td>{{milestone.dev_stat}}</td>
+            <td>{{milestone.milestone_value}} {{milestone.currency}}</td>
+            <td>
+                <button class="btn btn-primary btn-lg" ng-click="payNowHandler($index)">Pay Now</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
