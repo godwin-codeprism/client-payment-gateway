@@ -59,8 +59,8 @@
 	__webpack_require__(91);
 
 	//Godwin Scripts
+	__webpack_require__(97);
 	__webpack_require__(98);
-	__webpack_require__(99);
 
 /***/ },
 /* 1 */
@@ -61254,8 +61254,7 @@
 	module.exports = __webpack_require__.p + "assets/fonts/ionicons.svg";
 
 /***/ },
-/* 97 */,
-/* 98 */
+/* 97 */
 /***/ function(module, exports) {
 
 	angular
@@ -61276,7 +61275,7 @@
 
 
 /***/ },
-/* 99 */
+/* 98 */
 /***/ function(module, exports) {
 
 	angular.module("clientPayment").controller("homeController", [
@@ -61297,7 +61296,9 @@
 	      $http
 	        .post("./php/checkout.php", data)
 	        .then(function(res) {
-	          console.log(res);
+	          if(res.data.indexOf('https://') > -1){
+	            window.open(res.data, '_self');
+	          }
 	        })
 	        .catch(function(err) {
 	          console.log(err);

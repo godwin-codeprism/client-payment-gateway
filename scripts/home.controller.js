@@ -16,7 +16,9 @@ angular.module("clientPayment").controller("homeController", [
       $http
         .post("./php/checkout.php", data)
         .then(function(res) {
-          console.log(res);
+          if(res.data.indexOf('https://') > -1){
+            window.open(res.data, '_self');
+          }
         })
         .catch(function(err) {
           console.log(err);
