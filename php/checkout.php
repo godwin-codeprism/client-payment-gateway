@@ -21,7 +21,7 @@
 
     $item = new item();
     $item -> setName($product)
-        -> setCurrency('INR')
+        -> setCurrency('USD')
         -> setQuantity(1)
         -> setPrice($price);
     
@@ -34,17 +34,17 @@
                 ->setSubtotal($price);
 
     $amount = new Amount();
-    $amount -> setCurrency('INR')
+    $amount -> setCurrency('USD')
             -> setTotal($price);
 
     $transaction = new Transaction();
     $transaction -> setAmount($amount)
-                -> setDescription("Payment description")
+                -> setDescription($product)
                 -> setInvoiceNumber(uniqid());
 
     $redirectUrls = new RedirectUrls();
-    $redirectUrls -> setReturnUrl("http://localhost/client-payment-gateway/php/pay.php?success=true")
-                  -> setCancelUrl("http://localhost/client-payment-gateway/php/pay.php?success=false");
+    $redirectUrls -> setReturnUrl("http://localhost/client-payment-gateway")
+                  -> setCancelUrl("http://localhost/client-payment-gateway");
 
     $payment = new Payment();
         $payment->setIntent('sale')

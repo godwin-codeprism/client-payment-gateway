@@ -1,0 +1,18 @@
+[27-01-2018 08:26:44] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.sandbox.paypal.com/v1/oauth2/token
+[27-01-2018 08:26:44] PayPal\Core\PayPalHttpConnection : INFO: Invalid or no certificate authority found - Retrying using bundled CA certs file
+[27-01-2018 08:26:45] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
+[27-01-2018 08:26:45] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.sandbox.paypal.com/v1/payments/payment
+[27-01-2018 08:26:46] PayPal\Core\PayPalHttpConnection : INFO: Invalid or no certificate authority found - Retrying using bundled CA certs file
+[27-01-2018 08:26:47] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 201
+[27-01-2018 09:35:20] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.sandbox.paypal.com/v1/oauth2/token
+[27-01-2018 09:35:20] PayPal\Core\PayPalHttpConnection : INFO: Invalid or no certificate authority found - Retrying using bundled CA certs file
+[27-01-2018 09:35:22] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
+[27-01-2018 09:35:22] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.sandbox.paypal.com/v1/payments/payment
+[27-01-2018 09:35:22] PayPal\Core\PayPalHttpConnection : INFO: Invalid or no certificate authority found - Retrying using bundled CA certs file
+[27-01-2018 09:35:24] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 201
+[31-01-2018 10:12:20] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.sandbox.paypal.com/v1/oauth2/token
+[31-01-2018 10:12:21] PayPal\Core\PayPalHttpConnection : INFO: Invalid or no certificate authority found - Retrying using bundled CA certs file
+[31-01-2018 10:12:22] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
+[31-01-2018 10:12:22] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.sandbox.paypal.com/v1/payments/payment
+[31-01-2018 10:12:23] PayPal\Core\PayPalHttpConnection : INFO: Invalid or no certificate authority found - Retrying using bundled CA certs file
+[31-01-2018 10:12:24] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 201

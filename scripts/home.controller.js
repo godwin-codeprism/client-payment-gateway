@@ -18,6 +18,8 @@ angular.module("clientPayment").controller("homeController", [
         .then(function(res) {
           if(res.data.indexOf('https://') > -1){
             window.open(res.data, '_self');
+          }else{
+            console.log(res.data);
           }
         })
         .catch(function(err) {

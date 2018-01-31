@@ -2,6 +2,6 @@
     "name":"Godwin",
     "description":"PayPal Integration",
     "require": {
-        "paypal/rest-api-sdk-php":"1.3.2"
+        "paypal/rest-api-sdk-php":"1.13.*"
     }
 }
